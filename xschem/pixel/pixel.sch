@@ -133,12 +133,98 @@ N -140 0 -140 510 {
 lab=AMP_OUT}
 N -90 0 -60 -0 {
 lab=AMP_OUT}
-N -970 410 -880 410 {
-lab=gring}
+N 70 360 90 360 {
+lab=GND}
+N 130 310 130 330 {
+lab=GND}
+N 70 310 70 360 {
+lab=GND}
+N 70 360 70 390 {
+lab=GND}
+N 130 360 230 360 {
+lab=GND}
+N 230 360 230 390 {
+lab=GND}
+N 70 390 130 390 {
+lab=GND}
+N 130 390 230 390 {
+lab=GND}
+N 70 310 130 310 {
+lab=GND}
+N 70 460 90 460 {
+lab=GND}
+N 130 410 130 430 {
+lab=GND}
+N 70 410 70 460 {
+lab=GND}
+N 70 460 70 490 {
+lab=GND}
+N 130 460 230 460 {
+lab=GND}
+N 230 460 230 490 {
+lab=GND}
+N 70 490 130 490 {
+lab=GND}
+N 130 490 230 490 {
+lab=GND}
+N 70 410 130 410 {
+lab=GND}
+N 470 280 470 340 { lab=VDD}
+N 410 340 470 340 { lab=VDD}
+N 450 280 470 280 { lab=VDD}
+N 410 310 410 340 { lab=VDD}
+N 410 250 470 250 {
+lab=VDD}
+N 470 250 470 290 {
+lab=VDD}
+N -740 -340 -700 -340 {
+lab=VDD}
+N -740 -380 -740 -340 {
+lab=VDD}
+N -740 -380 -700 -380 {
+lab=VDD}
+N -410 -380 -370 -380 {
+lab=VDD}
+N -370 -380 -370 -340 {
+lab=VDD}
+N -410 -340 -370 -340 {
+lab=VDD}
+N -740 -340 -740 -200 {
+lab=VDD}
+N -740 -200 -700 -200 {
+lab=VDD}
+N -370 -340 -370 -200 {
+lab=VDD}
+N -410 -200 -370 -200 {
+lab=VDD}
+N 390 280 410 280 {
+lab=VDD}
+N 390 280 390 330 {
+lab=VDD}
+N 390 330 410 330 {
+lab=VDD}
+N 80 560 100 560 {
+lab=GND}
+N 140 510 140 530 {
+lab=GND}
+N 80 510 80 560 {
+lab=GND}
+N 80 560 80 590 {
+lab=GND}
+N 140 560 240 560 {
+lab=GND}
+N 240 560 240 590 {
+lab=GND}
+N 80 590 140 590 {
+lab=GND}
+N 140 590 240 590 {
+lab=GND}
+N 80 510 140 510 {
+lab=GND}
 C {devices/lab_pin.sym} -100 0 1 0 {name=l40 sig_type=std_logic lab=AMP_OUT}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 110 60 3 0 {name=M2
 L=1
-W=5
+W=2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -218,7 +304,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} -680 -200 0 1 {name=M8
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -680 -200 0 1 {name=M8
 L=2
 W=1
 body=VDD
@@ -235,8 +321,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} -560 -420 0 0 {name=l3 lab=VDD}
 C {devices/ngspice_probe.sym} -640 -140 0 0 {name=r3}
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} -430 -340 0 0 {name=M10
-L=1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -430 -340 0 0 {name=M10
+L=2
 W=1
 body=VDD
 nf=1
@@ -250,8 +336,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} -680 -340 0 1 {name=M11
-L=1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -680 -340 0 1 {name=M11
+L=2
 W=1
 body=VDD
 nf=1
@@ -271,7 +357,7 @@ C {devices/gnd.sym} -220 360 0 0 {name=l12 lab=GND}
 C {devices/vdd.sym} -220 -420 0 0 {name=l22 lab=VDD}
 C {devices/lab_pin.sym} -520 360 0 1 {name=l34 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 300 0 0 {name=M15
-L=1.2
+L=1.15
 W=1
 nf=1
 mult=1
@@ -327,7 +413,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8_lvt.sym} -430 -200 0 0 {name=M9
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -430 -200 0 0 {name=M9
 L=2
 W=1
 body=VDD
@@ -399,5 +485,70 @@ C {devices/lab_pin.sym} -700 60 2 1 {name=l10 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} -410 60 0 1 {name=l8 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} -200 -70 0 1 {name=l11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} -180 300 0 1 {name=l13 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} -1030 410 0 0 {name=l2 sig_type=std_logic lab=AMP_IN}
-C {devices/lab_pin.sym} -880 410 2 0 {name=l4 sig_type=std_logic lab=gring}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 110 360 0 0 {name=MD_4
+L=0.35
+W=2.6
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 70 360 2 1 {name=l5 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 230 390 0 1 {name=l16 sig_type=std_logic lab=GND}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 110 460 0 0 {name=MD_1
+L=2
+W=2
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 70 460 2 1 {name=l15 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 230 490 0 1 {name=l17 sig_type=std_logic lab=GND}
+C {devices/ipin.sym} -860 -290 0 0 {name=p6 lab=VDD}
+C {devices/ipin.sym} -860 -240 0 0 {name=p8 lab=GND}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 430 280 0 1 {name=M17
+L=0.65
+W=0.65
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 470 300 2 0 {name=l18 sig_type=std_logic lab=VDD}
+C {devices/ipin.sym} -880 -160 0 0 {name=p9 lab=gring}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 120 560 0 0 {name=MD_2
+L=3.35
+W=2
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 80 560 2 1 {name=l2 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 240 590 0 1 {name=l4 sig_type=std_logic lab=GND}
