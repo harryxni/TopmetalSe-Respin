@@ -148,4 +148,42 @@ C {devices/lab_pin.sym} 3630 940 0 0 {name=l30 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 820 0 0 {name=l31 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 940 0 0 {name=l32 sig_type=std_logic lab=vssd1}
 C {array3.sym} 4560 -260 0 0 {name=x1}
-C {devices/lab_pin.sym} 5050 -460 2 0 {name=p33 sig_type=std_logic lab=io_analog[0]}
+C {devices/lab_pin.sym} 5010 -390 2 0 {name=p33 sig_type=std_logic lab=io_analog[0]}
+C {array_SR.sym} 3770 -70 0 0 {name=x2}
+C {opamp_diego/opamp_wrapper.sym} 4860 -370 0 0 {name=x3}
+C {opamp_diego/opamp_wrapper.sym} 4070 -230 0 0 {name=x4}
+C {biases.sym} 3920 -460 0 0 {name=x5}
+C {devices/lab_pin.sym} 4070 -500 2 0 {name=p34 sig_type=std_logic lab=OUT_IB}
+C {devices/lab_pin.sym} 4070 -480 2 0 {name=p35 sig_type=std_logic lab=NB1}
+C {devices/lab_pin.sym} 4070 -460 2 0 {name=p36 sig_type=std_logic lab=SF_IB
+}
+C {devices/lab_pin.sym} 4070 -440 2 0 {name=p37 sig_type=std_logic lab=NB2}
+C {devices/lab_pin.sym} 4070 -420 2 0 {name=p38 sig_type=std_logic lab=AMP_IB}
+C {devices/lab_pin.sym} 3920 -250 1 0 {name=p39 sig_type=std_logic lab=OUT_IB}
+C {devices/lab_pin.sym} 3920 -210 3 0 {name=p40 sig_type=std_logic lab=AMP_IB}
+C {devices/lab_pin.sym} 3770 -500 0 0 {name=p41 sig_type=std_logic lab=vccd1
+}
+C {devices/lab_pin.sym} 3770 -480 0 0 {name=p42 sig_type=std_logic lab=vssd1}
+C {devices/lab_pin.sym} 4710 -390 1 0 {name=p45 sig_type=std_logic lab=OUT_IB}
+C {devices/lab_pin.sym} 4710 -350 3 0 {name=p46 sig_type=std_logic lab=AMP_IB}
+C {devices/lab_pin.sym} 3620 -230 0 0 {name=p49 sig_type=std_logic lab=SF_IB
+}
+C {devices/lab_pin.sym} 3620 -90 0 0 {name=p50 sig_type=std_logic lab=NB1}
+C {devices/lab_pin.sym} 3620 -110 0 0 {name=p51 sig_type=std_logic lab=NB2}
+C {devices/lab_pin.sym} 3620 -170 0 0 {name=p52 sig_type=std_logic lab=vccd1
+}
+C {devices/lab_pin.sym} 3620 -130 0 0 {name=p53 sig_type=std_logic lab=vssd1}
+C {devices/lab_pin.sym} 4410 -330 0 0 {name=p54 sig_type=std_logic lab=SF_IB
+}
+C {devices/lab_pin.sym} 4410 -210 0 0 {name=p55 sig_type=std_logic lab=NB2}
+C {devices/lab_pin.sym} 4410 -190 0 0 {name=p56 sig_type=std_logic lab=NB1}
+C {devices/lab_pin.sym} 4220 -250 2 0 {name=p59 sig_type=std_logic lab=io_analog[1]}
+C {devices/lab_pin.sym} 4410 -370 0 0 {name=p57 sig_type=std_logic lab=vccd1
+}
+C {devices/lab_pin.sym} 4410 -350 0 0 {name=p60 sig_type=std_logic lab=vssd1}
+C {devices/lab_pin.sym} 4220 -230 2 0 {name=p43 sig_type=std_logic lab=vssd1}
+C {devices/lab_pin.sym} 4220 -210 2 0 {name=p44 sig_type=std_logic lab=vccd1
+}
+C {devices/lab_pin.sym} 5010 -370 2 0 {name=p58 sig_type=std_logic lab=vssd1}
+C {devices/lab_pin.sym} 5010 -350 2 0 {name=p61 sig_type=std_logic lab=vccd1
+}
