@@ -99,8 +99,6 @@ N -360 510 -360 600 {
 lab=AMP_IN}
 N -360 180 -360 510 {
 lab=AMP_IN}
-N -760 180 -740 180 {
-lab=VREF}
 N -220 0 -140 0 {
 lab=AMP_OUT}
 N -210 640 -210 670 {
@@ -428,7 +426,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/ipin.sym} -760 180 0 0 {name=p1 lab=VREF}
+C {devices/ipin.sym} -740 180 0 0 {name=p1 lab=VREF}
 C {devices/ipin.sym} -340 180 2 0 {name=p2 lab=AMP_IN}
 C {devices/ipin.sym} -640 360 0 0 {name=p3 lab=NB1
 }

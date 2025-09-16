@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1757995770
+timestamp 1758062772
 << nmoslvt >>
 rect 270 -148900 1070 -148700
 rect 1770 -148900 2570 -148700
@@ -14641,12 +14641,12 @@ rect 148710 -148850 148720 -148750
 rect 148610 -149050 148720 -148850
 << metal5 >>
 rect -1000 1420 0 1580
-use pixel  pixel_0
-timestamp 1757982896
+use marker_pixel  marker_pixel_0
+timestamp 1758062358
 transform 1 0 -1900 0 1 1350
 box 1820 -1430 3480 230
-use pixel  pixel_1
-timestamp 1757982896
+use marker_pixel  marker_pixel_1
+timestamp 1758062358
 transform 1 0 -400 0 1 1350
 box 1820 -1430 3480 230
 use pixel  pixel_2

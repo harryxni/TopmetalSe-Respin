@@ -1,0 +1,27 @@
+* NGSPICE file created from marker_pixel.ext - technology: sky130A
+
+.subckt marker_pixel gring VDD GND VREF ROW_SEL NB1 VBIAS NB2 AMP_IN SF_IB PIX_OUT
++ CSA_VREF
+X0 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5 pd=7.5 as=25.284374 ps=56.25 w=2 l=2
+X1 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=0.2925 pd=2.2 as=1.57 ps=12.3 w=0.65 l=0.65
+X2 a_4120_n520# VBIAS a_4120_n750# GND sky130_fd_pr__nfet_01v8_lvt ad=0.35 pd=2.7 as=1.995 ps=8.8 w=1 l=0.8
+X3 a_5720_n730# a_4600_n810# GND VDD sky130_fd_pr__pfet_01v8_lvt ad=0.25 pd=1.5 as=0.35 ps=2.7 w=1 l=1
+X4 VDD SF_IB a_5720_n730# VDD sky130_fd_pr__pfet_01v8_lvt ad=0.35 pd=2.7 as=0.25 ps=1.5 w=1 l=1
+X5 a_5460_10# a_4350_10# VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=0.175 pd=1.35 as=0.35 ps=2.7 w=1 l=2
+X6 a_3860_n520# VBIAS a_3860_n1150# GND sky130_fd_pr__nfet_01v8_lvt ad=0.35 pd=2.7 as=1.76 ps=8.8 w=1 l=0.8
+X7 VDD a_4120_n520# a_4600_n810# GND sky130_fd_pr__nfet_01v8_lvt ad=0.3 pd=2.6 as=0.25 ps=1.5 w=1 l=1
+X8 a_4350_10# a_3860_n520# a_3860_n520# VDD sky130_fd_pr__pfet_01v8_lvt ad=0.175 pd=1.35 as=0.35 ps=2.7 w=1 l=2
+X9 a_4120_n750# AMP_IN a_4050_n2590# GND sky130_fd_pr__nfet_01v8_lvt ad=1.995 pd=8.8 as=1.4 ps=7.4 w=7 l=0.15
+X10 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.119375 pd=7.15 as=0 ps=0 w=2 l=3.35
+X11 a_4120_n520# a_3860_n520# a_5460_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=0.35 pd=2.7 as=0.175 ps=1.35 w=1 l=2
+X12 GND NB1 a_4050_n2590# GND sky130_fd_pr__nfet_01v8_lvt ad=0.42 pd=3.1 as=0.42 ps=3.1 w=1.2 l=1
+X13 a_5750_n920# ROW_SEL PIX_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=0.6 pd=2.95 as=5.4 ps=9.4 w=2 l=1
+X14 a_4050_n2590# a_4020_n2258# a_3860_n1150# GND sky130_fd_pr__nfet_01v8_lvt ad=1.4 pd=7.4 as=1.76 ps=8.8 w=7 l=0.15
+X15 a_4600_n810# NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=1.15
+X16 AMP_IN a_4600_n810# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X17 VDD a_4350_10# a_4350_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=0.35 pd=2.7 as=0.175 ps=1.35 w=1 l=2
+X18 VDD a_5720_n730# a_5750_n920# GND sky130_fd_pr__nfet_01v8_lvt ad=0.35 pd=2.7 as=0.6 ps=2.95 w=1 l=0.15
+X19 AMP_IN CSA_VREF a_4600_n810# VDD sky130_fd_pr__pfet_01v8_lvt ad=0.294 pd=2.24 as=0.273 ps=2.14 w=0.42 l=8
+X20 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt ad=10.715 pd=15.9 as=0 ps=0 w=2.6 l=0.35
+.ends
+

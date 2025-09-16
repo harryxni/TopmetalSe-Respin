@@ -5,6 +5,10 @@ K {}
 V {}
 S {}
 E {}
+N 4170 400 4170 440 { lab="(io_oeb[6:9], io_oeb[15:19], io_oeb[23:24], io_oeb[20:22])"}
+N 4170 500 4170 520 { lab=vssd1}
+N 4130 400 4170 400 { lab="(io_oeb[6:9], io_oeb[15:19], io_oeb[23:24], io_oeb[20:22])"}
+N 4130 520 4170 520 { lab=vssd1}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -95,3 +99,10 @@ C {devices/lab_pin.sym} 3620 -30 0 0 {name=p74 sig_type=std_logic lab=io_in[7]}
 C {devices/lab_pin.sym} 3620 -50 0 0 {name=p75 sig_type=std_logic lab=io_in[17]}
 C {devices/lab_pin.sym} 4270 60 0 0 {name=p76 sig_type=std_logic lab=io_in[20:22]}
 C {devices/lab_pin.sym} 4270 180 0 0 {name=p77 sig_type=std_logic lab="(io_in[23:24], io_in[15])"}
+C {sky130_fd_pr/res_generic_m1.sym} 4170 470 0 0 {name=R8[0:13]
+W=0.5
+L=0.5
+model=res_generic_m3
+mult=1}
+C {devices/lab_pin.sym} 4130 400 0 0 {name=l28 sig_type=std_logic lab="(io_oeb[6:9], io_oeb[15:19], io_oeb[23:24], io_oeb[20:22])"}
+C {devices/lab_pin.sym} 4130 520 0 0 {name=l29 sig_type=std_logic lab=vssd1}
