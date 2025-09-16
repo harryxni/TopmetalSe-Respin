@@ -1,0 +1,51 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Cell pixel (0) disconnected node: gring
+Cell pixel (1) disconnected node: gring
+Class pixel (0):  Merged 2 parallel devices.
+Class pixel (1):  Merged 2 parallel devices.
+Cell pixel (0) disconnected node: gring
+Cell pixel (1) disconnected node: gring
+Subcircuit summary:
+Circuit 1: pixel                           |Circuit 2: pixel                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (12->10)       |sky130_fd_pr__nfet_01v8_lvt (12->10)       
+sky130_fd_pr__pfet_01v8_lvt (8)            |sky130_fd_pr__pfet_01v8_lvt (8)            
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pixel                           |Circuit 2: pixel                           
+-------------------------------------------|-------------------------------------------
+ROW_SEL                                    |ROW_SEL                                    
+PIX_OUT                                    |pix_out                                    
+SF_IB                                      |SF_IB                                      
+NB2                                        |NB2                                        
+NB1                                        |NB1                                        
+VREF                                       |VREF                                       
+CSA_VREF                                   |CSA_VREF                                   
+VBIAS                                      |VBIAS                                      
+AMP_IN                                     |AMP_IN                                     
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+gring                                      |gring                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pixel and pixel are equivalent.
+
+Final result: Circuits match uniquely.
+.
