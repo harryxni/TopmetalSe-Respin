@@ -147,3 +147,5 @@ C {devices/lab_pin.sym} 3630 830 0 0 {name=l29 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3630 940 0 0 {name=l30 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 820 0 0 {name=l31 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 940 0 0 {name=l32 sig_type=std_logic lab=vssd1}
+C {array3.sym} 4560 -260 0 0 {name=x1}
+C {devices/lab_pin.sym} 5050 -460 2 0 {name=p33 sig_type=std_logic lab=io_analog[0]}

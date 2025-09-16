@@ -218,7 +218,7 @@ class xschem_gen:
     def tran_inst(self,inst,x,y,col_num):
         lines=[]
         nfet_line='C {sky130_fd_pr/nfet_01v8_lvt.sym} %i %i 3 0 {name=M%i\n'\
-            'L=0.15 W=8 nf=1 mult=1\n'\
+            'L=2 W=8 nf=1 mult=1\n'\
             """ad="'int((nf+1)/2) * W/nf * 0.29'" pd="'2*int((nf+1)/2) * (W/nf + 0.29)'" \n"""\
             """as="'int((nf+2)/2) * W/nf * 0.29'" \n"""\
             """ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"\n"""\
@@ -350,7 +350,7 @@ if __name__== "__main__":
 #        f.write('\n'.join(output))
 
 
-    sch = xschem_gen('pixel/pixel.sch')
+    sch = xschem_gen('pixel/pixel.sch', array_size=3)
     output = sch.array_schem()
     print(output)
 #    output += sch.place_ports()

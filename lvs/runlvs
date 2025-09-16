@@ -1,15 +1,23 @@
-set layout [readnet spice "../mag/pixel.spice"]
-set source [readnet spice "/opt/OpenICEDA/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"]
-#readnet verilog "../../shift_register/Schem/shift_register.pnl.v" $source
+#set layout [readnet spice "../mag/array_SR.spice"]
+#set layout [readnet spice "../mag/opamp_wrapper.spice"]
+
+set layout [readnet spice "../mag/pixel_array.spice"]
+#set source [readnet spice "/opt/OpenICEDA/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"]
+set source [readnet spice "../netgen/sky130_fd_sc_hd.spice"]
+readnet verilog "../verilog/gl/shift_registerC.v" $source
+readnet verilog "../verilog/gl/shift_register.v" $source
 
 #readnet spice "/opt/OpenICEDA/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice" $source
-readnet spice "/home/hni/TopmetalSe-Respin/xschem/pixel/simulation/pixel.spice" $source
+readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/array_SR.spice" $source
 
-#lvs "$layout shift_reg_r95_m2" "$source shift_register" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
-#lvs "$layout opamp_wrapper" "$source opamp_wrapper" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
+readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/array3.spice" $source
+readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/opamp_wrapper.spice" $source
 
-#lvs "$layout marker_pixel" "$source marker_pixel" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
-#lvs "$layout array_95" "$source array_95" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
+#lvs "$layout shift_registerC" "$source shift_registerC" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
+#lvs "$layout shift_register" "$source shift_register" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
+
 lvs "$layout pixel" "$source pixel" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
-#lvs "$layout uw_wrapper_proj_frame" "$source openframe_project_wrapper" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
-#lvs "$layout array95_SR_opamp" "$source array95_SR_amp" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/setup.tcl full_lvs.report
+
+#lvs "$layout pixel" "$source pixel" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
+#lvs "$layout array_SR" "$source array_SR" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
+

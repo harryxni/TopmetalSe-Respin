@@ -1,21 +1,5 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
-
-Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
-
-Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
-
-Cell pixel (0) disconnected node: gring
-Cell pixel (1) disconnected node: gring
-Class pixel (0):  Merged 2 parallel devices.
-Class pixel (1):  Merged 2 parallel devices.
-Cell pixel (0) disconnected node: gring
+Cell pixel (2) disconnected node: gring
 Cell pixel (1) disconnected node: gring
 Subcircuit summary:
 Circuit 1: pixel                           |Circuit 2: pixel                           

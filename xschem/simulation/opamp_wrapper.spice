@@ -1,0 +1,38 @@
+** sch_path: /home/hni/TopmetalSe-Respin/xschem/opamp_diego/opamp_wrapper.sch
+.subckt opamp_wrapper AOUT OUT_IB VSS VDD ARRAY_OUT AMP_IB
+*.PININFO ARRAY_OUT:I AMP_IB:I VDD:B AOUT:O OUT_IB:I VSS:B
+XM8 ARRAY_OUT OUT_IB VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 iref AMP_IB VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x2 VDD iref ARRAY_OUT AOUT AOUT VSS opamp_v1
+.ends
+
+* expanding   symbol:  /home/hni/snrlab-ic-sky130-explorer-pixel-v0/Modules/uw_pixel/Schematic/opamp_diego/opamp_v1.sym # of
+*+ pins=6
+** sym_path: /home/hni/snrlab-ic-sky130-explorer-pixel-v0/Modules/uw_pixel/Schematic/opamp_diego/opamp_v1.sym
+** sch_path: /home/hni/snrlab-ic-sky130-explorer-pixel-v0/Modules/uw_pixel/Schematic/opamp_diego/opamp_v1.sch
+.subckt opamp_v1 VDD iref vin_p vin_n vout VSS
+*.PININFO VDD:B VSS:B iref:I vout:O vin_n:I vin_p:I
+XM1 net1 vin_n net3 net3 sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200
+XM2 net2 vin_p net3 net3 sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200
+XM3 net1 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)' nrd='0.29 / W'
++ nrs='0.29 / W' sa=0 sb=0 sd=0 mult=30 m=30
+XM4 net2 net1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)' nrd='0.29 / W'
++ nrs='0.29 / W' sa=0 sb=0 sd=0 mult=30 m=30
+XM5 net3 iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)' nrd='0.29 / W'
++ nrs='0.29 / W' sa=0 sb=0 sd=0 mult=30 m=30
+XM7 vout iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)' nrd='0.29 / W'
++ nrs='0.29 / W' sa=0 sb=0 sd=0 mult=150 m=150
+XM8 iref iref VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)' nrd='0.29 / W'
++ nrs='0.29 / W' sa=0 sb=0 sd=0 mult=15 m=15
+XM9 net4 VDD net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=6 m=6
+XC1 vout net4 sky130_fd_pr__cap_mim_m3_1 W=17.55 L=15 MF=6 m=6
+XM6 vout net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.45 W=4.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)' ps='2 * (W + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=150 m=150
+.ends
+
+.end
