@@ -1,17 +1,17 @@
 #set layout [readnet spice "../mag/array_SR.spice"]
-#set layout [readnet spice "../mag/opamp_wrapper.spice"]
+set layout [readnet spice "../mag/old_project_wrapper.spice"]
 
-set layout [readnet spice "../mag/pixel_array.spice"]
 #set source [readnet spice "/opt/OpenICEDA/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"]
 set source [readnet spice "../netgen/sky130_fd_sc_hd.spice"]
+
 readnet verilog "../verilog/gl/shift_registerC.v" $source
 readnet verilog "../verilog/gl/shift_register.v" $source
 
 #readnet spice "/opt/OpenICEDA/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice" $source
-readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/array_SR.spice" $source
+readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/user_analog_project_wrapper.spice" $source
 
-readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/array3.spice" $source
-readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/opamp_wrapper.spice" $source
+#readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/array3.spice" $source
+#readnet spice "/home/hni/TopmetalSe-Respin/xschem/simulation/opamp_wrapper.spice" $source
 
 #lvs "$layout shift_registerC" "$source shift_registerC" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
 #lvs "$layout shift_register" "$source shift_register" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
@@ -21,3 +21,4 @@ lvs "$layout pixel" "$source pixel" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/n
 #lvs "$layout pixel" "$source pixel" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
 #lvs "$layout array_SR" "$source array_SR" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
 
+lvs "$layout old_project_wrapper" "$source user_analog_project_wrapper" /opt/OpenICEDA/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl 
