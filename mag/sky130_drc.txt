@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>SKY130 DRC runset</description>
+ <original-file>/home/hni/TopmetalSe-Respin/mag/bias.gds</original-file>
+ <generator>drc: script='/home/hni/.klayout/drc/sky130A_mr-CL-only.drc'</generator>
+ <top-cell>bias</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>nwell.lvtn</name>
+   <description>nwell.lvtn : min enclosure of lvtn : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>clvthm</name>
+   <description>clvthm.1: min. nwell &amp; hvtp width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>clntm</name>
+   <description>clntm.1: min. (nwell OR (ldntm OR rpm OR hvi)) &gt;= 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.1</name>
+   <description>hvi.1 : min. hvi width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>bias</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

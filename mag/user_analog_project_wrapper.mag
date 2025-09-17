@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1758069660
+timestamp 1758153220
 << metal1 >>
 rect 143673 694385 144063 694391
 rect 7012 688094 7332 688100
@@ -18505,13 +18505,21 @@ rect 573845 73296 578645 95036
 rect 581398 94762 581718 95036
 rect 582412 95012 582780 95036
 use array_SR  array_SR_0
-timestamp 1758069660
+timestamp 1758153220
 transform 1 0 54469 0 1 344190
 box -21072 586 308046 327366
+use art  art_0
+timestamp 1758143371
+transform 1 0 143198 0 1 848
+box 0 15800 120000 113600
 use bias  bias_0
-timestamp 1758069660
+timestamp 1758153220
 transform 1 0 145381 0 1 675880
 box 790 -2236 7180 -220
+use logo  logo_0
+timestamp 1758130718
+transform 1 0 266036 0 1 -9388
+box 5800 24800 119800 112800
 use opamp_wrapper  opamp_wrapper_0
 timestamp 1758069660
 transform 1 0 369481 0 1 359134
@@ -18521,7 +18529,7 @@ timestamp 1758069660
 transform 1 0 179353 0 1 180877
 box -2280 -2669 27441 13665
 use pixel_array  pixel_array_0
-timestamp 1758069660
+timestamp 1758130752
 transform 1 0 165661 0 1 187877
 box -3720 -8600 11230 5820
 use sky130_fd_pr__res_generic_m3_3NNQKJ  sky130_fd_pr__res_generic_m3_3NNQKJ_0
@@ -18532,6 +18540,10 @@ use sky130_fd_pr__res_generic_m3_3NNQKJ  sky130_fd_pr__res_generic_m3_3NNQKJ_1
 timestamp 1758069660
 transform 0 1 767 -1 0 462426
 box -50 -107 50 107
+use text  text_0
+timestamp 1758079492
+transform 1 0 65312 0 1 -19966
+box 34800 44600 75400 83200
 << labels >>
 flabel metal3 s -800 381864 480 381976 0 FreeSans 1400 0 0 0 gpio_analog[10]
 port 2 nsew

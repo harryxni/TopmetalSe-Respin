@@ -1,0 +1,6 @@
+extract path extfiles
+extract all
+ext2spice lvs on
+ext2spice -p extfiles
+
+gds write ../gds/user_analog_project_wrapper.gds

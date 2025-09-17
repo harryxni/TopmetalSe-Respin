@@ -167,14 +167,6 @@ N 370 540 470 540 {
 lab=GND}
 N 310 460 370 460 {
 lab=GND}
-N 710 330 710 390 { lab=VDD}
-N 650 390 710 390 { lab=VDD}
-N 690 330 710 330 { lab=VDD}
-N 650 360 650 390 { lab=VDD}
-N 650 300 710 300 {
-lab=VDD}
-N 710 300 710 340 {
-lab=VDD}
 N -500 -290 -460 -290 {
 lab=VDD}
 N -500 -330 -500 -290 {
@@ -194,12 +186,6 @@ lab=VDD}
 N -130 -290 -130 -150 {
 lab=VDD}
 N -170 -150 -130 -150 {
-lab=VDD}
-N 630 330 650 330 {
-lab=VDD}
-N 630 330 630 380 {
-lab=VDD}
-N 630 380 650 380 {
 lab=VDD}
 N 320 610 340 610 {
 lab=GND}
@@ -500,7 +486,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 310 410 2 1 {name=l5 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 470 440 0 1 {name=l16 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 350 510 0 0 {name=MD_1
-L=2
+L=1.44
 W=2
 nf=1
 mult=1
@@ -517,22 +503,6 @@ C {devices/lab_pin.sym} 310 510 2 1 {name=l15 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 470 540 0 1 {name=l17 sig_type=std_logic lab=GND}
 C {devices/ipin.sym} -620 -240 0 0 {name=p6 lab=VDD}
 C {devices/ipin.sym} -620 -190 0 0 {name=p8 lab=GND}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 670 330 0 1 {name=M17
-L=0.65
-W=0.65
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 710 350 2 0 {name=l18 sig_type=std_logic lab=VDD}
 C {devices/ipin.sym} -640 -110 0 0 {name=p9 lab=gring}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 360 610 0 0 {name=MD_2
 L=3.35

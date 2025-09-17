@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>SKY130 DRC runset</description>
+ <original-file>/home/hni/TopmetalSe-Respin/gds/user_analog_project_wrapper.gds</original-file>
+ <generator>drc: script='/home/hni/.klayout/drc/sky130A_mr-CL-only.drc'</generator>
+ <top-cell>user_analog_project_wrapper</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>nwell.lvtn</name>
+   <description>nwell.lvtn : min enclosure of lvtn : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>clvthm</name>
+   <description>clvthm.1: min. nwell &amp; hvtp width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>clntm</name>
+   <description>clntm.1: min. (nwell OR (ldntm OR rpm OR hvi)) &gt;= 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.1</name>
+   <description>hvi.1 : min. hvi width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>user_analog_project_wrapper</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+  <cell>
+   <name>bias</name>
+   <variant/>
+   <layout-name>bias</layout-name>
+   <references>
+    <ref>
+     <parent>user_analog_project_wrapper</parent>
+     <trans>r0 *1 726.905,3379.4</trans>
+    </ref>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'nwell.lvtn'</category>
+   <cell>bias</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (7.92,-5.15;5.88,-5.15)/(7.58,-4.98;6.22,-4.98)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

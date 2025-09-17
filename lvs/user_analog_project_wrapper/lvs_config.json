@@ -15,7 +15,7 @@
 		""
 	],
 	"LVS_NOFLATTEN": [
-		""
+		"pixel"
 	],
 	"LVS_IGNORE": [
 		""
@@ -24,10 +24,11 @@
 		"$UPRJ_ROOT/xschem/user_analog_project_wrapper.spice"
 	],
 	"LVS_SPICE_FILES": [
-		""
+		"sky130_fd_pr__special_nfet_01v8.pm3.spice "
 	],
 	"LVS_VERILOG_FILES": [
-		""
+		"$UPRJ_ROOT/verilog/gl/shift_registerC.v",
+		"$UPRJ_ROOT/verilog/gl/shift_register.v"
 	],
 	"LAYOUT_FILE": "$UPRJ_ROOT/gds/user_analog_project_wrapper.gds"
 }

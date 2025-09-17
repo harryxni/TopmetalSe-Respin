@@ -438,45 +438,6 @@ A                                          |A
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__buf_4 and sky130_fd_sc_hd__buf_4 are equivalent.
 
-Cell marker_pixel (0) disconnected node: gring
-Cell marker_pixel (0) disconnected node: VREF
-Cell marker_pixel[[0]] (1) disconnected node: gring
-Cell marker_pixel[[0]] (1) disconnected node: VREF
-Class marker_pixel[[0]] (1):  Merged 2 parallel devices.
-Cell marker_pixel (0) disconnected node: gring
-Cell marker_pixel (0) disconnected node: VREF
-Cell marker_pixel[[0]] (1) disconnected node: gring
-Cell marker_pixel[[0]] (1) disconnected node: VREF
-Subcircuit summary:
-Circuit 1: marker_pixel                    |Circuit 2: marker_pixel[[0]]               
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8_lvt (12->10)       |sky130_fd_pr__nfet_01v8_lvt (12->10)       
-sky130_fd_pr__pfet_01v8_lvt (8)            |sky130_fd_pr__pfet_01v8_lvt (8)            
-sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
-Number of devices: 19                      |Number of devices: 19                      
-Number of nets: 21                         |Number of nets: 21                         
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: marker_pixel                    |Circuit 2: marker_pixel[[0]]               
--------------------------------------------|-------------------------------------------
-ROW_SEL                                    |ROW_SEL                                    
-PIX_OUT                                    |pix_out                                    
-SF_IB                                      |SF_IB                                      
-NB2                                        |NB2                                        
-NB1                                        |NB1                                        
-CSA_VREF                                   |CSA_VREF                                   
-VBIAS                                      |VBIAS                                      
-AMP_IN                                     |AMP_IN                                     
-GND                                        |GND                                        
-VDD                                        |VDD                                        
-gring                                      |gring                                      
-VREF                                       |VREF                                       
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes marker_pixel and marker_pixel[[0]] are equivalent.
-
 Class shift_registerC (0):  Merged 6238 parallel devices.
 Class shift_registerC (1):  Merged 6238 parallel devices.
 Subcircuit summary:
@@ -531,24 +492,8 @@ COL_SEL[37]                                |COL_SEL[37]
 COL_SEL[80]                                |COL_SEL[80]                                
 COL_SEL[78]                                |COL_SEL[78]                                
 COL_SEL[74]                                |COL_SEL[74]                                
-COL_SEL[14]                                |COL_SEL[14]                                
 COL_SEL[16]                                |COL_SEL[16]                                
-COL_SEL[54]                                |COL_SEL[54]                                
-COL_SEL[56]                                |COL_SEL[56]                                
-COL_SEL[69]                                |COL_SEL[69]                                
-COL_SEL[53]                                |COL_SEL[53]                                
-COL_SEL[71]                                |COL_SEL[71]                                
-COL_SEL[50]                                |COL_SEL[50]                                
-COL_SEL[84]                                |COL_SEL[84]                                
-COL_SEL[72]                                |COL_SEL[72]                                
-COL_SEL[51]                                |COL_SEL[51]                                
-COL_SEL[57]                                |COL_SEL[57]                                
-COL_SEL[85]                                |COL_SEL[85]                                
-COL_SEL[82]                                |COL_SEL[82]                                
-COL_SEL[61]                                |COL_SEL[61]                                
-COL_SEL[59]                                |COL_SEL[59]                                
-COL_SEL[87]                                |COL_SEL[87]                                
-COL_SEL[91]                                |COL_SEL[91]                                
+COL_SEL[14]                                |COL_SEL[14]                                
 COL_SEL[49]                                |COL_SEL[49]                                
 COL_SEL[65]                                |COL_SEL[65]                                
 COL_SEL[73]                                |COL_SEL[73]                                
@@ -571,6 +516,22 @@ COL_SEL[64]                                |COL_SEL[64]
 COL_SEL[90]                                |COL_SEL[90]                                
 COL_SEL[92]                                |COL_SEL[92]                                
 COL_SEL[93]                                |COL_SEL[93]                                
+COL_SEL[54]                                |COL_SEL[54]                                
+COL_SEL[56]                                |COL_SEL[56]                                
+COL_SEL[69]                                |COL_SEL[69]                                
+COL_SEL[53]                                |COL_SEL[53]                                
+COL_SEL[71]                                |COL_SEL[71]                                
+COL_SEL[50]                                |COL_SEL[50]                                
+COL_SEL[84]                                |COL_SEL[84]                                
+COL_SEL[72]                                |COL_SEL[72]                                
+COL_SEL[51]                                |COL_SEL[51]                                
+COL_SEL[57]                                |COL_SEL[57]                                
+COL_SEL[85]                                |COL_SEL[85]                                
+COL_SEL[82]                                |COL_SEL[82]                                
+COL_SEL[61]                                |COL_SEL[61]                                
+COL_SEL[59]                                |COL_SEL[59]                                
+COL_SEL[87]                                |COL_SEL[87]                                
+COL_SEL[91]                                |COL_SEL[91]                                
 COL_SEL[17]                                |COL_SEL[17]                                
 COL_SEL[29]                                |COL_SEL[29]                                
 COL_SEL[2]                                 |COL_SEL[2]                                 
@@ -590,8 +551,8 @@ COL_SEL[13]                                |COL_SEL[13]
 COL_SEL[28]                                |COL_SEL[28]                                
 COL_SEL[26]                                |COL_SEL[26]                                
 COL_SEL[36]                                |COL_SEL[36]                                
-COL_SEL[20]                                |COL_SEL[20]                                
 COL_SEL[40]                                |COL_SEL[40]                                
+COL_SEL[20]                                |COL_SEL[20]                                
 COL_SEL[39]                                |COL_SEL[39]                                
 COL_SEL[19]                                |COL_SEL[19]                                
 COL_SEL[46]                                |COL_SEL[46]                                
@@ -603,8 +564,8 @@ COL_SEL[18]                                |COL_SEL[18]
 COL_SEL[9]                                 |COL_SEL[9]                                 
 COL_SEL[21]                                |COL_SEL[21]                                
 COL_SEL[47]                                |COL_SEL[47]                                
-COL_SEL[12]                                |COL_SEL[12]                                
 COL_SEL[24]                                |COL_SEL[24]                                
+COL_SEL[12]                                |COL_SEL[12]                                
 COL_SEL[6]                                 |COL_SEL[6]                                 
 COL_SEL[41]                                |COL_SEL[41]                                
 COL_SEL[43]                                |COL_SEL[43]                                
@@ -661,20 +622,19 @@ Subcircuit summary:
 Circuit 1: array_SR                        |Circuit 2: array_SR                        
 -------------------------------------------|-------------------------------------------
 pixel (9998)                               |pixel (9998)                               
-marker_pixel (2)                           |marker_pixel[[0]] (2)                      
+marker_pixel (2)                           |marker_pixel (2)                           
 sky130_fd_pr__nfet_01v8_lvt (100)          |sky130_fd_pr__nfet_01v8_lvt (100)          
 shift_registerC (2)                        |shift_registerC (2)                        
 Number of devices: 10102                   |Number of devices: 10102                   
 Number of nets: 10320                      |Number of nets: 10320                      
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: array_SR                        |Circuit 2: array_SR                        
 -------------------------------------------|-------------------------------------------
 COL_CLK                                    |COL_CLK                                    
 COL_DIN                                    |COL_DIN                                    
-COL_DOUT                                   |(no matching pin)                          
 COL_ENA                                    |COL_ENA                                    
 COL_RST                                    |COL_RST                                    
 ROW_CLK                                    |ROW_CLK                                    
@@ -691,11 +651,9 @@ VREF                                       |VREF
 NB2                                        |NB2                                        
 NB1                                        |NB1                                        
 CSA_VREF                                   |CSA_VREF                                   
-COL_DOUT                                   |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for array_SR and array_SR altered to match.
+Cell pin lists are equivalent.
 Device classes array_SR and array_SR are equivalent.
-  Flattening non-matched subcircuits array_SR array_SR
 
 Subcircuit summary:
 Circuit 1: opamp_wrapper                   |Circuit 2: opamp_wrapper                   
@@ -1974,15 +1932,14 @@ Cell user_analog_project_wrapper (1) disconnected node: user_irq[0]
 Subcircuit summary:
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 -------------------------------------------|-------------------------------------------
-pixel (10007)                              |pixel (10007)                              
-sky130_fd_pr__nfet_01v8_lvt (107)          |sky130_fd_pr__nfet_01v8_lvt (107)          
-marker_pixel (2)                           |marker_pixel[[0]] (2)                      
-shift_registerC (2)                        |shift_registerC (2)                        
+pixel (9)                                  |pixel (9)                                  
+sky130_fd_pr__nfet_01v8_lvt (7)            |sky130_fd_pr__nfet_01v8_lvt (7)            
+array_SR (1)                               |array_SR (1)                               
 opamp_wrapper (2)                          |opamp_wrapper (2)                          
 sky130_fd_pr__pfet_01v8_lvt (1)            |sky130_fd_pr__pfet_01v8_lvt (1)            
 sky130_fd_pr__res_generic_m3 (14)          |sky130_fd_pr__res_generic_m3 (14)          
-Number of devices: 10135                   |Number of devices: 10135                   
-Number of nets: 10357                      |Number of nets: 10357                      
+Number of devices: 34                      |Number of devices: 34                      
+Number of nets: 55                         |Number of nets: 55                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
