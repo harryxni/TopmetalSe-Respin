@@ -40,5 +40,5 @@ C {devices/ipin.sym} 60 30 0 0 {name=p10 lab=NB2}
 C {devices/ipin.sym} 60 -70 0 0 {name=p12 lab=SF_IB}
 C {devices/ipin.sym} -210 -20 0 0 {name=p13 lab=VDD}
 C {devices/ipin.sym} -210 10 0 0 {name=p17 lab=GND}
-C {shift_register.sym} -270 210 0 0 {name=x3}
 C {shift_registerC.sym} 360 220 0 0 {name=x2}
+C {shift_registerC.sym} -270 210 0 0 {name=x3}
