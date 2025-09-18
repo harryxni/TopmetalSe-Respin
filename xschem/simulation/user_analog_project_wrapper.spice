@@ -77,20 +77,20 @@ x2 net3 io_analog[6] io_analog[10] io_analog[7] vccd1 io_analog[8] vssd1 io_anal
 x3 io_analog[1] io_analog[3] vssd1 vccd1 net1 io_analog[2] opamp_wrapper
 x4 io_analog[0] io_analog[3] vssd1 vccd1 net3 io_analog[2] opamp_wrapper
 x5 io_analog[3] vccd1 io_analog[5] vssd1 io_analog[6] io_analog[4] io_analog[2] biases
-R8[0] vssd1 io_oeb[6] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[1] vssd1 io_oeb[7] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[2] vssd1 io_oeb[8] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[3] vssd1 io_oeb[9] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[4] vssd1 io_oeb[15] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[5] vssd1 io_oeb[16] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[6] vssd1 io_oeb[17] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[7] vssd1 io_oeb[18] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[8] vssd1 io_oeb[19] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[9] vssd1 io_oeb[23] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[10] vssd1 io_oeb[24] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[11] vssd1 io_oeb[20] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[12] vssd1 io_oeb[21] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
-R8[13] vssd1 io_oeb[22] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[0] vccd1 io_oeb[6] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[1] vccd1 io_oeb[7] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[2] vccd1 io_oeb[8] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[3] vccd1 io_oeb[9] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[4] vccd1 io_oeb[15] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[5] vccd1 io_oeb[16] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[6] vccd1 io_oeb[17] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[7] vccd1 io_oeb[18] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[8] vccd1 io_oeb[19] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[9] vccd1 io_oeb[23] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[10] vccd1 io_oeb[24] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[11] vccd1 io_oeb[20] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[12] vccd1 io_oeb[21] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
+R8[13] vccd1 io_oeb[22] sky130_fd_pr__res_generic_m3 W=0.5 L=0.5 m=1
 .ends
 
 * expanding   symbol:  array3.sym # of pins=13

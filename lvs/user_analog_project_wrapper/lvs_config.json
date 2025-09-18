@@ -1,5 +1,5 @@
 {
-	"STD_CELL_LIBRARY": "sky130_fd_sc_hvl",
+	"STD_CELL_LIBRARY": "sky130_fd_sc_hd",
 	"INCLUDE_CONFIGS": [
 		"$LVS_ROOT/tech/$PDK/lvs_config.base.json"
 	],
@@ -21,10 +21,11 @@
 		""
 	],
 	"LVS_SPICE_FILES_TO_FIX": [
-		"$UPRJ_ROOT/xschem/user_analog_project_wrapper.spice"
+		"$UPRJ_ROOT/xschem/simulation/user_analog_project_wrapper.spice"
 	],
 	"LVS_SPICE_FILES": [
-		"sky130_fd_pr__special_nfet_01v8.pm3.spice "
+		"$UPRJ_ROOT/lvs/sky130_fd_pr__special_nfet_01v8.pm3.spice ",
+		"$UPRJ_ROOT/netgen/sky130_fd_sc_hd.spice"
 	],
 	"LVS_VERILOG_FILES": [
 		"$UPRJ_ROOT/verilog/gl/shift_registerC.v",
