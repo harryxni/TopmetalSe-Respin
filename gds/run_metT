@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+
+usage() { echo "Usage: $0 <GDS file name> <top cell name>" 1>&2; exit 1; }
+
+if [[ -z "$1"  ]] ; then usage; fi
+
+
+RUN_DIR=$PWD
+
+FILE=$1
+TOP_CELL=$2
+
+#INPUT_GDS=${RUN_DIR}/$FILE
+INPUT_GDS=$FILE
+OUTPUT_PATH=${RUN_DIR}
+LOG_PATH=${RUN_DIR}
+tech_met=${RUN_DIR}/density_met_tiled.drc
+
+echo INPUT_GDS=$INPUT_GDS
+echo TOP_CELL=$TOP_CELL
+echo OUTPUT_PATH=$OUTPUT_PATH
+echo LOG_PATH=$LOG_PATH
+echo tech_met=$tech_met
+
+echo ""
+
+echo "Running check Tiled Metal density"
+klayout -b \
+    -rd gds_input=$INPUT_GDS \
+    -rd report_file=${OUTPUT_PATH}/klayout_met_tiled_check.xml \
+    -rd thr=12 \
+    -rd step=70 \
+    -rd top_cell=$TOP_CELL \
+    -r ${tech_met} \
+    >& ${LOG_PATH}/klayout_met_tiled_check.log
+
+kmHist.rb ${OUTPUT_PATH}/klayout_met_tiled_check.xml > ${OUTPUT_PATH}/klayout_met_tiled_check.xml.summary
+
+echo ""
